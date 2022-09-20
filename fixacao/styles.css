@@ -3,6 +3,11 @@
     margin: 0;
     font-family: Helvetica, sans-serif;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   
   header {
     background-color: #4986b8;
@@ -13,7 +18,7 @@
   }
   
   main {
-    height: 77vh;
+    min-height: 77vh;
     max-width: 800px;
     display: flex;
     flex-direction: row;
@@ -25,7 +30,7 @@
   main section {
     padding: 10px;
   }
-  
+
   .left {
     background-color: moccasin;
   }
@@ -39,10 +44,18 @@
   }
   
   footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     background-color: black;
     color: white;
     padding: 20px;
     width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    main {
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    
   }
