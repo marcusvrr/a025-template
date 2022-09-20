@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 128,0);
+    border: 1px solid black;
+    color: antiquewhite;
+}
+@media screen and (max-width: 600px) {
+    section {
+        width: 100%;
+        border: 1px solid black;
+    }    
+}
